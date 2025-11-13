@@ -1,3 +1,35 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 300;
+    src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+  
+}
+
 :root{
     --color-brand-light:rgba(129, 155, 87, 1);
     --color-primary-dark: rgba(49, 38, 26, 1);
@@ -6,19 +38,31 @@
   
 }
 /*Base*/
-ul{
-    list-style-type: none;
-}
-/*Button*/
+
 body{
     color: var(--color-primary-dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+address{
+font-style: normal;
+}
+
+ul {
+    list-style-type: none;
 }
 .button{
+    font-weight: 600;
+    line-height: 59px;
     color: var(--color-primary-light);
     background-color: var(--color-brand-light);
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
+
 }
 .button:hover{
     color: var(--color-primary-dark);
@@ -32,24 +76,81 @@ body{
 .link{
     color: var(--color-primary-light);
     background-color:transparent;
-
+   
 }
 .link:hover{
     color: var(--color-brand-light);
+    font-weight: 600;
 
 }
 /*Hero section*/
 .hero-title{
     color:var(--color-primary-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+    
 }
 .hero-title .accent{
     color: var(--color-brand-light);
+  
 }
 /*Advantages section*/
 .advantages-list{
     background-color: var(--color-brand-light);
     color: var(--color-primary-light);
 }
+.advantages-item{
+    font-weight: 300;
+    font-size: 20px;
+   
+}
+
+.section-title{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 84px;
+}
+
 .section-title .accent{
     color: var(--color-brand-light);
+}
+/*Tradition-section*/
+.tradition-text .brand{
+    color: var(--color-brand-light);
+}
+.tradition-text .uppercase{
+    color: var(--color-brand-light);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*Chef-section*/
+.chef-title{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+/*Format-section*/
+.format-title{
+    font-weight: 600;
+font-size: 24px;
+}
+.format-text{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/*Footer*/
+.address-link{
+font-weight: 300;
+font-size: 16px;
+color: var(--color-primary-light);
+text-decoration: none;
+}
+.address-link:hover {
+    color: var(--color-brand-light);
+}
+.addresse-copyright{
+    font-size: 14px;
 }
